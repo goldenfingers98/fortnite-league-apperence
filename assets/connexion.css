@@ -1,0 +1,93 @@
+@font-face {
+  font-family: fortnite;
+  src: url(fortnite.otf);
+}
+
+.container{
+  font-family: fortnite;
+  display: flex;
+  justify-content: center;
+  top: 25%;
+  bottom: 25%;
+  position: relative;
+}
+
+.center-container{
+  display: flex;
+  justify-content: center;
+}
+
+body{
+  background-color: #fbd735;
+}
+
+.info{
+  display: flex;
+  font-size: 2em;
+  margin: 15px;
+}
+
+
+.info input[type=text],.info input[type=password],.info input[type=email]{
+  height: 40px;
+  font-size: 1em;
+  font-family: fortnite;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container h3{
+  margin: 0;
+  min-width: 195px;
+  margin-right: 10px;
+  padding: 5px;
+  user-select: none;
+  text-shadow: 0 0 0px white;
+}
+
+
+.btn-container{
+  display: table;
+  border-spacing: 50px 0;
+  padding: 0 0 15px 0;
+}
+
+.btn{
+  display: table-cell;
+  background-color: #35414f;
+  text-align : center;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  font-size: 1.75em;
+  transform: skew(-10deg);
+  box-shadow: 2px 8px 12px -4px rgba(0,0,0,.5);
+  cursor: pointer;
+}
+
+.btn span{
+  position: relative;
+  top: 25%;
+  bottom: 25%;
+  user-select: none;
+}
+
+.btn:active{
+  box-shadow: none;
+}
+
+.btn-container input[type=checkbox]{
+  display: table-cell;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: bottom;
+  outline: 2px solid;
+  outline-offset: -1px;
+}
+
+.stay-connected{
+  position: relative;
+  top: 10px;
+}

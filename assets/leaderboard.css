@@ -1,0 +1,105 @@
+@font-face {
+  font-family: fortnite;
+  src: url(fortnite.otf);
+}
+
+body {
+  font-family: fortnite;
+}
+
+.container {
+  background: rgb(251, 215, 53);
+  background: linear-gradient(135deg, rgba(251, 215, 53, 1) 20%, rgba(53, 65, 79, 1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.stats-container {
+  transform: skew(-15deg);
+  background: rgb(251, 216, 53);
+  background: linear-gradient(0deg, rgba(251, 216, 53, 1) 0%, rgba(251, 216, 53, 0.1) 100%);
+  width: calc(50% - 185px);
+  height: 100vh;
+}
+
+.stats-container h1,.table-container h1 {
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 60;
+  position: relative;
+  left: -30px;
+  text-shadow: 0px 0px 6px black;
+}
+
+.stats td{
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 0px 0px 6px black;
+  letter-spacing: 2px;
+}
+
+.stats td:nth-child(2){
+  font-size: 35px;
+}
+
+.stats{
+  border-spacing: 50px 10px;
+  width: 100%
+}
+
+.table-container {
+  width: 50%;
+  height: 100vh;
+}
+
+.table-container h1{
+  margin: 25px 15px;
+}
+
+.leaderboard{
+  width: 400px;
+  height: calc( 100% - 150px );
+  background-color: rgba(53,65,79,0.4);
+  border-radius: 2px;
+  overflow: auto;
+  padding: 10px 20px;
+}
+
+.leaderboard table{
+  width: 100%;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 0px 0px 6px black;
+  border-spacing: 0 10px;
+}
+
+.leaderboard table tr:nth-child(1) td:nth-child(1){
+  font-size: 50px;
+  color: #fbd735;
+}
+
+.leaderboard table tr td{
+  height: 30px;
+}
+
+.leaderboard::-webkit-scrollbar {
+  width: 12px;
+}
+
+.leaderboard::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #fbd735;
+  background: #ffffff;
+}
+
+.leaderboard::-webkit-scrollbar-thumb {
+  background: #fbd735;
+  border: solid 2px #ffffff;
+}
+
+.leaderboard::-webkit-scrollbar-thumb:hover {
+  background: #fbd735;
+}
