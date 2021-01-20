@@ -7,26 +7,29 @@ body {
   font-family: fortnite;
 }
 
-.container {
-  background: rgb(251, 215, 53);
-  background: linear-gradient(135deg, rgba(251, 215, 53, 1) 20%, rgba(53, 65, 79, 1) 100%);
+.leaderboard-container {
+  background: rgb(251,215,53);
+  background: linear-gradient(135deg, rgba(251,215,53,1) 0%, rgba(220,192,57,1) 39%, rgba(197,175,60,1) 61%, rgba(180,162,62,1) 82%, rgba(174,157,63,1) 100%, rgba(53,65,79,1) 100%);
   position: absolute;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
   width: 100%;
+  overflow-x: hidden;
 }
 
-.stats-container {
+.leaderboard-stats-container {
+  position: relative;
+  left: -30;
   transform: skew(-15deg);
   background: rgb(251, 216, 53);
-  background: linear-gradient(0deg, rgba(251, 216, 53, 1) 0%, rgba(251, 216, 53, 0.1) 100%);
+  /*background: linear-gradient(0deg, rgba(251, 216, 53, 1) 0%, rgba(251, 216, 53, 0.1) 100%);*/
   width: calc(50% - 185px);
   height: 100vh;
 }
 
-.stats-container h1,.table-container h1 {
+.leaderboard-stats-container h1,.leaderboard-table-container h1 {
   color: #fff;
   letter-spacing: 5px;
   font-size: 60;
@@ -35,71 +38,128 @@ body {
   text-shadow: 0px 0px 6px black;
 }
 
-.stats td{
+.leaderboard-stats td{
   color: #fff;
   font-size: 25px;
   text-shadow: 0px 0px 6px black;
   letter-spacing: 2px;
 }
 
-.stats td:nth-child(2){
+.leaderboard-stats td:nth-child(2){
   font-size: 35px;
 }
 
-.stats{
+.leaderboard-stats{
   border-spacing: 50px 10px;
   width: 100%
 }
 
-.table-container {
-  width: 50%;
+.leaderboard-table-container {
+  width: 60%;
   height: 100vh;
 }
 
-.table-container h1{
-  margin: 25px 15px;
+.leaderboard-table-container h1{
+  margin: 25px 30px;
 }
 
-.leaderboard{
-  width: 400px;
+.leaderboard-leaderboard{
+  width: 80%;
   height: calc( 100% - 150px );
-  background-color: rgba(53,65,79,0.4);
   border-radius: 2px;
   overflow: auto;
-  padding: 10px 20px;
 }
 
-.leaderboard table{
-  width: 100%;
+.leaderboard-table{
+  border-spacing: 40px 0;
+}
+
+.leaderboard-leaderboard .leaderboard-table-row{
   font-size: 25px;
   color: #fff;
   text-shadow: 0px 0px 6px black;
-  border-spacing: 0 10px;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  text-align: center;
 }
 
-.leaderboard table tr:nth-child(1) td:nth-child(1){
+.leaderboard-leaderboard .leaderboard-table-row div{
+  padding: 5px 0;
+}
+
+.leaderboard-leaderboard .leaderboard-table-row:nth-child(odd){
+  background-color: rgba(53,65,79,0.5);
+}
+
+.leaderboard-selectable{
+  display: flex;
+}
+
+
+.leaderboard-rank{
+  width: 10%;
+}
+
+.leaderboard-selectable{
+  width: 90%;
+  transition: 0.3s;
+}
+
+.leaderboard-selectable:hover {
+    background-color: #ffff;
+    color: #000;
+    text-shadow: none;
+}
+
+.leaderboard-nickname{
+  width: 70%;
+  padding-left: 10px !important;
+  text-align: initial;
+}
+
+.leaderboard-score{
+  width: 15%;
+}
+
+.leaderboard-img{
+  width: 15%;
+}
+
+
+.leaderboard-img{
+  border-radius: 100%;
+}
+
+.leaderboard-img img{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 3px;
+}
+
+.leaderboard-table .leaderboard-table-row:nth-child(1) .leaderboard-rank{
   font-size: 50px;
   color: #fbd735;
+  padding: 0;
+  position: relative;
+  bottom: 5px;
 }
 
-.leaderboard table tr td{
-  height: 30px;
-}
 
-.leaderboard::-webkit-scrollbar {
+.leaderboard-leaderboard::-webkit-scrollbar {
   width: 12px;
 }
 
-.leaderboard::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #fbd735;
-  background: #ffffff;
+.leaderboard-leaderboard::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0);
 }
 
-.leaderboard::-webkit-scrollbar-thumb {
+.leaderboard-leaderboard::-webkit-scrollbar-thumb {
   background: #fbd735;
-  border: solid 2px #ffffff;
+  border: solid 1px #ffffff;
 }
 
-.leaderboard::-webkit-scrollbar-thumb:hover {
+.leaderboard-leaderboard::-webkit-scrollbar-thumb:hover {
   background: #fbd735;
 }
