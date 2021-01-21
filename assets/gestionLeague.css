@@ -1,0 +1,100 @@
+@font-face {
+  font-family: fortnite;
+  src: url(fortnite.otf);
+}
+
+
+.gestionLeague-container{
+  background-color: #35414f;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.gestionLeague-img{
+  padding: 5px;
+  transition: 0.5s;
+  margin: 25px;
+  box-shadow: 0 0 10px 1px black;
+  width: 25%;
+  cursor: context-menu;
+  user-select: none;
+  background-color: #fbd735;
+}
+
+.gestionLeague-img img{
+  transition: 0.5s;
+  width: 70%;
+  height: auto;
+  margin: 0 15%;
+}
+
+.gestionLeague-img:active{
+  background-color: rgba(53,65,79,0.4);
+}
+
+
+.gestionLeague-img:hover{
+  width: calc( 25% + 50px );
+}
+
+
+.gestionLeague-data{
+  font-family: fortnite;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: table;
+}
+
+.gestionLeague-data h1{
+  font-size: 50px;
+  margin: 0;
+}
+
+.gestionLeague-title-description{
+  display: table-cell;
+}
+
+.gestionLeague-btn{
+  display: table-cell;
+  background-color: #fbd735;
+  text-align : center;
+  color: #000;
+  width: 150px;
+  height: 50px;
+  font-size: 1.75em;
+  transform: skew(-10deg);
+  box-shadow: 0 0 10px 1px black;
+  cursor: pointer;
+  font-family: fortnite;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.gestionLeague-btn span{
+  position: relative;
+  top: 25%;
+  bottom: 25%;
+  user-select: none;
+}
+
+.gestionLeague-btn:active{
+  box-shadow: none;
+}
+
+.gestionLeague-btn-container input[type=checkbox]{
+  display: table-cell;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: bottom;
+  outline: 2px solid;
+  outline-offset: -1px;
+}
