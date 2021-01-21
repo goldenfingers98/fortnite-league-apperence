@@ -21,15 +21,14 @@
   transition: 0.5s;
   margin: 5px;
   box-shadow: 0 0 10px 1px black;
-  width: 30%;
-  height: 70%;
+  width: 25%;
 }
 
 .navigation-img img{
   transition: 0.5s;
-  width: 90%;
+  width: 70%;
   height: auto;
-  margin: 0 5%;
+  margin: 0 15%;
 }
 
 .navigation-img:active{
@@ -43,8 +42,7 @@
 }*/
 
 .navigation-img:hover{
-  width: 400px;
-  height: 626px;
+  width: calc( 25% + 50px );
 }
 
 
