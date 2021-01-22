@@ -1,0 +1,98 @@
+@font-face {
+  font-family: fortnite;
+  src: url(fortnite.otf);
+}
+
+.promote-container {
+  font-family: fortnite;
+  background-color: #fbd735;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.promote-container label {
+  font-size: 40px;
+}
+
+.promote-container input, .promote-container select {
+  width: 175px;
+  height: 40px;
+  font-size: 1.5em;
+  font-family: fortnite;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.promote-container input:focus, .promote-container select:focus {
+  outline: none;
+}
+
+.promote-container select {
+  text-align-last: center;
+}
+
+.promote-container table {
+  border-spacing: 15px;
+}
+
+.promote-btn {
+  font-family: fortnite;
+  display: block;
+  background-color: #35414f;
+  text-align: center;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  font-size: 1.75em;
+  transform: skew(-10deg);
+  box-shadow: 2px 8px 12px -4px rgba(0, 0, 0, 0.5);
+  padding-top: 6px;
+  cursor: pointer;
+  margin: 10px auto;
+  border: none;
+  text-align: center;
+}
+
+.promote-btn:focus {
+  outline: none;
+}
+
+.promote-btn:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.promote-back-btn{
+  display: table-cell;
+  background-color: #35414f;
+  text-align : center;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  font-size: 1.75em;
+  transform: skew(-10deg);
+  box-shadow: 2px 8px 12px -4px rgba(0,0,0,.5);
+  cursor: pointer;
+  font-family: fortnite;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.promote-back-btn span{
+  position: relative;
+  top: 25%;
+  bottom: 25%;
+  user-select: none;
+}
+
+.promote-back-btn:active{
+  box-shadow: none;
+}
