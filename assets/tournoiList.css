@@ -6,8 +6,24 @@
 .tournoiList-card-container{
   display: flex;
   align-items: center;
-  justify-content: center;
   overflow-x: auto;
+}
+
+.tournoiList-card-container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.tournoiList-card-container::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0);
+}
+
+.tournoiList-card-container::-webkit-scrollbar-thumb {
+  background: #fbd735;
+  border: solid 1px #000;
+}
+
+.tournoiList-card-container::-webkit-scrollbar-thumb:hover {
+  background: #fbd735;
 }
 
 .tournoiList-container{
@@ -28,9 +44,11 @@
   margin: 25px;
   box-shadow: 0 0 10px 1px black;
   width: 25%;
+  min-width: 350px;
   cursor: context-menu;
   user-select: none;
   background-color: #fbd735;
+  flex: 0 0 auto;
 }
 
 .tournoiList-img img{
