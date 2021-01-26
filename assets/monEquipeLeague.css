@@ -1,0 +1,311 @@
+@font-face {
+  font-family: fortnite;
+  src: url(fortnite.otf);
+}
+
+.monEquipeLeague-container {
+  background: rgb(251,215,53);
+  background: linear-gradient(135deg, rgba(251,215,53,1) 0%, rgba(220,192,57,1) 39%, rgba(197,175,60,1) 61%, rgba(180,162,62,1) 82%, rgba(174,157,63,1) 100%, rgba(53,65,79,1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-x: hidden;
+  user-select: none;
+  font-family: fortnite;
+  height: 100vh
+}
+
+.monEquipeLeague-table-container {
+  width: 70%;
+  height: 35%;
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+}
+
+.monEquipeLeague-table-container h1{
+  margin: 25px 30px;
+  font-size: 2.5em;
+  text-shadow: 0 0 7px #fff;
+}
+
+.monEquipeLeague-table-container button{
+  width: 20px;
+  height: 50px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-size: 30px;
+  transform: scale(2, 5);
+  cursor: pointer;
+}
+
+.monEquipeLeague-table-container button:focus{
+  outline: none;
+}
+
+
+.monEquipeLeague-table-container button:active{
+  color: #fff;
+  text-shadow: 0 0 4px black;
+}
+
+.monEquipeLeague-monEquipeLeague{
+  width: 80%;
+  height:100%;
+  border-radius: 2px;
+  overflow: auto;
+  position: relative;
+  left: 5%;
+}
+
+
+.monEquipeLeague-table{
+  border-spacing: 40px 0;
+}
+
+.monEquipeLeague-monEquipeLeague .monEquipeLeague-table-row{
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 0px 0px 6px black;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.monEquipeLeague-monEquipeLeague .monEquipeLeague-table-row div{
+  padding: 5px 20px;
+}
+
+.monEquipeLeague-monEquipeLeague .monEquipeLeague-table-row:nth-child(odd){
+  background-color: rgba(53,65,79,0.5);
+}
+
+.monEquipeLeague-selectable{
+  display: flex;
+  width: 80%;
+  transition: 0.3s;
+}
+
+.monEquipeLeague-selectable:hover {
+    background-color: #ffff;
+    color: #000;
+    text-shadow: none;
+}
+
+.monEquipeLeague-nickname{
+  width: 70%;
+  padding-left: 10px !important;
+  text-align: center;
+}
+
+.monEquipeLeague-monEquipeLeague::-webkit-scrollbar {
+  width: 12px;
+}
+
+.monEquipeLeague-monEquipeLeague::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0);
+}
+
+.monEquipeLeague-monEquipeLeague::-webkit-scrollbar-thumb {
+  background: #fbd735;
+  border: solid 1px #ffffff;
+}
+
+.monEquipeLeague-monEquipeLeague::-webkit-scrollbar-thumb:hover {
+  background: #fbd735;
+}
+
+.monEquipeLeague-btn{
+  display: table-cell;
+  background-color: #9e0000;
+  text-align : center;
+  color: #fff;
+  width: 100%;
+  height: 25px;
+  font-size: 1em;
+  transform: skew(-10deg);
+  box-shadow: 2px 8px 12px -4px rgba(0,0,0,.5);
+  cursor: pointer;
+}
+
+.monEquipeLeague-table .monEquipeLeague-table-row:nth-child(1) .monEquipeLeague-btn{
+  display: none;
+}
+
+.monEquipeLeague-btn span{
+  position: relative;
+  top: 10%;
+  user-select: none;
+}
+
+.monEquipeLeague-btn:active{
+  box-shadow: none;
+}
+
+.monEquipeLeague-btn-container input[type=checkbox]{
+  display: table-cell;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: bottom;
+  outline: 2px solid;
+  outline-offset: -1px;
+}
+
+.monEquipeLeague-btn-container{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/******************************************************************************************************/
+
+
+.monEquipeLeague-demande-table .monEquipeLeague-demande-table-row{
+  display: flex;
+}
+
+
+.monEquipeLeague-demande-table-container {
+  width: 70%;
+  height: 45%;
+  margin: 0 auto;
+}
+
+.monEquipeLeague-demande-table-container h1{
+  margin: 25px 30px;
+  font-size: 2.5em;
+  text-shadow: 0 0 7px #fff;
+}
+
+.monEquipeLeague-demande-table-container button{
+  width: 20px;
+  height: 50px;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-size: 30px;
+  transform: scale(2, 5);
+  cursor: pointer;
+}
+
+.monEquipeLeague-demande-table-container button:focus{
+  outline: none;
+}
+
+
+.monEquipeLeague-demande-table-container button:active{
+  color: #fff;
+  text-shadow: 0 0 4px black;
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande{
+  width: 80%;
+  height: 100%;
+  border-radius: 2px;
+  overflow: auto;
+  position: relative;
+  left: 5%;
+}
+
+
+.monEquipeLeague-demande-table{
+  border-spacing: 40px 0;
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande .monEquipeLeague-demande-table-row{
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 0px 0px 6px black;
+  display: flex;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande .monEquipeLeague-demande-table-row div{
+  padding: 5px 20px;
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande .monEquipeLeague-demande-table-row:nth-child(odd){
+  background-color: rgba(53,65,79,0.5);
+}
+
+.monEquipeLeague-demande-selectable{
+  display: flex;
+  width: 50%;
+  transition: 0.3s;
+}
+
+.monEquipeLeague-demande-selectable:hover {
+    background-color: #ffff;
+    color: #000;
+    text-shadow: none;
+}
+
+.monEquipeLeague-demande-nickname{
+  width: 70%;
+  padding-left: 10px !important;
+  text-align: center;
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande::-webkit-scrollbar {
+  width: 12px;
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0);
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande::-webkit-scrollbar-thumb {
+  background: #fbd735;
+  border: solid 1px #ffffff;
+}
+
+.monEquipeLeague-demande-monEquipeLeague-demande::-webkit-scrollbar-thumb:hover {
+  background: #fbd735;
+}
+
+.monEquipeLeague-demande-btn{
+  display: table-cell;
+  background-color: #35414f;
+  text-align : center;
+  color: #fff;
+  width: 100%;
+  height: 25px;
+  font-size: 1em;
+  transform: skew(-10deg);
+  box-shadow: 2px 8px 12px -4px rgba(0,0,0,.5);
+  cursor: pointer;
+}
+
+.monEquipeLeague-demande-btn span{
+  position: relative;
+  top: 10%;
+  user-select: none;
+}
+
+.monEquipeLeague-demande-btn:active{
+  box-shadow: none;
+}
+
+.monEquipeLeague-demande-btn-container input[type=checkbox]{
+  display: table-cell;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: bottom;
+  outline: 2px solid;
+  outline-offset: -1px;
+}
+
+.monEquipeLeague-demande-btn-container{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
