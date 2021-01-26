@@ -300,12 +300,17 @@
   background: #fbd735;
 }
 
+.monEquipeLeague-demande-btn-container .monEquipeLeague-demande-btn:nth-child(2){
+  background-color: #9e0000;
+}
+
 .monEquipeLeague-demande-btn{
   display: table-cell;
   background-color: #35414f;
   text-align : center;
   color: #fff;
-  width: 100%;
+  width: 50%;
+  margin: 5px;
   height: 25px;
   font-size: 1em;
   transform: skew(-10deg);
@@ -321,16 +326,6 @@
 
 .monEquipeLeague-demande-btn:active{
   box-shadow: none;
-}
-
-.monEquipeLeague-demande-btn-container input[type=checkbox]{
-  display: table-cell;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  vertical-align: bottom;
-  outline: 2px solid;
-  outline-offset: -1px;
 }
 
 .monEquipeLeague-demande-btn-container{
