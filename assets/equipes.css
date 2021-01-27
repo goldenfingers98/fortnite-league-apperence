@@ -4,8 +4,8 @@
 }
 
 .equipes-container {
-  background: rgb(251,215,53);
-  background: linear-gradient(135deg, rgba(251,215,53,1) 0%, rgba(220,192,57,1) 39%, rgba(197,175,60,1) 61%, rgba(180,162,62,1) 82%, rgba(174,157,63,1) 100%, rgba(53,65,79,1) 100%);
+  background: rgb(251, 215, 53);
+  background: linear-gradient(135deg, rgba(251, 215, 53, 1) 0%, rgba(220, 192, 57, 1) 39%, rgba(197, 175, 60, 1) 61%, rgba(180, 162, 62, 1) 82%, rgba(174, 157, 63, 1) 100%, rgba(53, 65, 79, 1) 100%);
   position: absolute;
   top: 0;
   left: 0;
@@ -18,53 +18,49 @@
   font-family: fortnite;
 }
 
-
-
 .equipes-table-container {
   width: 70%;
   height: 100vh;
 }
 
-.equipes-table-container h1{
+.equipes-table-container h1 {
   margin: 25px 30px;
   font-size: 2.5em;
 }
 
-.equipes-table-container button{
+.equipes-table-container button {
   width: 20px;
   height: 50px;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: none;
   font-size: 30px;
   transform: scale(2, 5);
   cursor: pointer;
 }
 
-.equipes-table-container button:focus{
+.equipes-table-container button:focus {
   outline: none;
 }
 
-
-.equipes-table-container button:active{
+.equipes-table-container button:active {
   color: #fff;
   text-shadow: 0 0 4px black;
 }
 
-.equipes-equipes{
+.equipes-equipes {
   width: 80%;
-  height: calc( 100% - 150px );
+  height: calc(100% - 150px);
   border-radius: 2px;
   overflow: auto;
   position: relative;
   left: 5%;
 }
 
-
-.equipes-table{
+.equipes-table {
   border-spacing: 40px 0;
 }
 
-.equipes-equipes .equipes-table-row{
+.equipes-equipes .equipes-table-row {
   font-size: 25px;
   color: #fff;
   text-shadow: 0px 0px 6px black;
@@ -75,27 +71,27 @@
   align-items: center;
 }
 
-.equipes-equipes .equipes-table-row div{
+.equipes-equipes .equipes-table-row div {
   padding: 5px 20px;
 }
 
-.equipes-equipes .equipes-table-row:nth-child(odd){
-  background-color: rgba(53,65,79,0.5);
+.equipes-equipes .equipes-table-row:nth-child(odd) {
+  background-color: rgba(53, 65, 79, 0.5);
 }
 
-.equipes-selectable{
+.equipes-selectable {
   display: flex;
   width: 50%;
   transition: 0.3s;
 }
 
 .equipes-selectable:hover {
-    background-color: #ffff;
-    color: #000;
-    text-shadow: none;
+  background-color: #ffff;
+  color: #000;
+  text-shadow: none;
 }
 
-.equipes-nickname{
+.equipes-nickname {
   width: 70%;
   padding-left: 10px !important;
   text-align: center;
@@ -106,7 +102,7 @@
 }
 
 .equipes-equipes::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0);
+  background: rgba(255, 255, 255, 0);
 }
 
 .equipes-equipes::-webkit-scrollbar-thumb {
@@ -118,30 +114,30 @@
   background: #fbd735;
 }
 
-.equipes-btn{
+.equipes-btn {
   display: table-cell;
   background-color: #35414f;
-  text-align : center;
+  text-align: center;
   color: #fff;
   width: 100%;
   height: 25px;
   font-size: 1em;
   transform: skew(-10deg);
-  box-shadow: 2px 8px 12px -4px rgba(0,0,0,.5);
+  box-shadow: 2px 8px 12px -4px rgba(0, 0, 0, .5);
   cursor: pointer;
 }
 
-.equipes-btn span{
+.equipes-btn span {
   position: relative;
   top: 10%;
   user-select: none;
 }
 
-.equipes-btn:active{
+.equipes-btn:active {
   box-shadow: none;
 }
 
-.equipes-btn-container input[type=checkbox]{
+.equipes-btn-container input[type=checkbox] {
   display: table-cell;
   width: 20px;
   height: 20px;
@@ -151,9 +147,44 @@
   outline-offset: -1px;
 }
 
-.equipes-btn-container{
+.equipes-btn-container {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.equipes-recherche {
+  display: flex;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+  left: 5%;
+  position: relative;
+  top: -15;
+}
+
+.equipes-recherche .equipes-btn {
+  height: 40px;
+  width: 150px;
+  background-color: #35fba6;
+}
+
+.equipes-recherche .equipes-btn span {
+  top: 20%;
+  font-size: 1.5em;
+  text-shadow: 0 0 4px black;
+}
+
+.equipes-recherche input[type=text] {
+  height: 30px;
+  font-size: 1.5em;
+  font-family: fortnite;
+  border: 2px solid;
+  border-radius: 5px;
+  text-align: center;
+}
+
+input[type=text]:focus {
+  outline: none;
 }
